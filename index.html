@@ -5,50 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
             padding: 20px;
-            background-color: #d6b1d2;
+            background-color: #ffffff88;
         }
         h1, h2, h3 {
-            color: #000000;
+            color: #333;
         }
         .endpoint {
-            background: #a47b97;
+            background: #ebe3ea;
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
         code {
-            background: #cda0c4;
+            background: #ffffff88;
             padding: 3px 6px;
             border-radius: 3px;
         }
         
     </style>
+
 </head>
 <body>
-    <h1>My super cool API</h1>
-    <p>Welcome to my super cool API. Below you will find details on how to interact with my endpoints.</p>
-
+    <h1>Helias API</h1>
+    <p>Welcome to my API. Below are the endpoints you can use.</p>
+  
     <h2>Endpoints</h2>
+  
     <div class="endpoint">
-        <h3>Get Post</h3>
-        <p><strong>Endpoint:</strong> <code>GET /posts/:id</code></p>
-        <p><strong>Description:</strong> Retrieves a specific post by ID.</p>
-        <p><strong>Example Request:</strong></p>
-        <pre><code>fetch('https://jsonplaceholder.typicode.com/posts/1')
-    .then(response => response.json())
-    .then(data => console.log(data));</code></pre>
-        <p><strong>Example Response:</strong></p>
-        <pre><code>{
-    "userId": 1,
-    "id": 1,
-    "title": "Sample Title",
-    "body": "This is a sample post body."
-}</code></pre>
+      <h3>Get all products</h3>
+      <p><strong>Endpoint:</strong> <code>GET /products</code></p>
+      <p><strong>Description:</strong> Returns a list of products.</p>
     </div>
-</body>
-</html>
+  
+    <div class="endpoint">
+      <h3>Create a product</h3>
+      <p><strong>Endpoint:</strong> <code>POST /product</code></p>
+      <p><strong>Description:</strong> Creates a new product.  
+      Requires <code>name</code> and <code>type</code> in the request body.</p>
+    </div>
+  
+  </body>
+  </html>

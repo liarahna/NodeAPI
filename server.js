@@ -4,7 +4,7 @@ const app = express ();
 app.use(express.json());
 const PORT = 3000;
 
-const NET_API_URL = "http://localhost:5275"
+const NET_API_URL = "https://heliaslabbapi.azurewebsites.net/"
 
 
 app.get("/products", async (req, res) => {
